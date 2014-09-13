@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".MenuActivity" >
+
+    <Button
+        android:id="@+id/btn_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="19dp"
+        android:drawableTop="@drawable/touch_pad"
+        android:text="@string/touch"
+        android:onClick="menuClick" />
+		
+    <Button
+        android:id="@+id/btn_folder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btn_pad"
+        android:layout_marginRight="17dp"
+        android:drawableTop="@drawable/folder"
+        android:text="@string/explorer" 
+        android:onClick="menuClick"/>
+		
+    <Button
+        android:id="@+id/btn_pc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_pad"
+        android:layout_below="@+id/btn_folder"
+        android:layout_marginTop="26dp"
+        android:drawableTop="@drawable/pc"
+        android:text="@string/desktop"
+        android:onClick="menuClick" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_folder"
+        android:layout_alignTop="@+id/btn_pc"
+        android:drawableTop="@drawable/camera"
+        android:text="@string/camera"
+        android:onClick="menuClick"
+         />
+
+</RelativeLayout>
